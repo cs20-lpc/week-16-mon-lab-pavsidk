@@ -12,11 +12,11 @@ private:
     int left(int i)   { return 2 * i + 1; }
     int right(int i)  { return 2 * i + 2; }
 
-    void siftUp(int i);
-    void siftDown(int i);
-
 public:
     MinHeap() {}
+
+    void siftUp(int i);
+    void siftDown(int i);
 
     void insert(const T& value);
     T removeRoot();
